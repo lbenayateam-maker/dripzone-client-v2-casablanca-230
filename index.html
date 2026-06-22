@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="dark">
+<head>
+<script>
+  // Controlled strictly by our C++ host injector before local rendering
+  window.DRIPZONE_EDIT_MODE = false;
+</script>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barber Shop — barber shop</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Cairo', sans-serif; background-color: #051814; }
+        .emerald-gradient { background: linear-gradient(135deg, #E2B275 0%, #D9A05B 50%, #B07B3A 100%); }
+    </style>
+</head>
+<body class="text-stone-200 antialiased selection:bg-[#D9A05B] selection:text-neutral-950">
+
+    <!-- Top Luxury Bar -->
+    <div class="bg-gradient-to-r from-[#B07B3A] via-[#D9A05B] to-[#B07B3A] text-neutral-950 text-center py-2 text-xs font-black tracking-wider">
+        🔱 نادي العناية الفاخر المخصص لرجال الأعمال والشخصيات الباحثة عن التميز
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="max-w-7xl mx-auto px-6 py-6 flex justify-between items-center border-b border-emerald-950/60 sticky top-0 bg-[#051814]/90 backdrop-blur-md z-50">
+        <span class="text-xl font-black text-white tracking-widest font-serif">EMERALD<span class="text-[#D9A05B]">.ROSE</span></span>
+        <nav class="hidden lg:flex items-center gap-8 text-xs font-bold text-stone-400 uppercase tracking-widest">
+            <a href="#about" class="hover:text-[#D9A05B] transition-colors">عن الصالون</a>
+            <a href="#services" class="hover:text-[#D9A05B] transition-colors">الخدمات الاستثنائية</a>
+            <a href="#team" class="hover:text-[#D9A05B] transition-colors">الخبراء</a>
+            <a href="#faq" class="hover:text-[#D9A05B] transition-colors">الأسئلة</a>
+        </nav>
+        <a href="tel:{PHONE}" class="border border-[#D9A05B] text-[#D9A05B] text-xs font-black px-5 py-2 hover:bg-[#D9A05B] hover:text-[#051814] transition-all rounded-sm">{PHONE}</a>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="max-w-7xl mx-auto px-6 py-20 lg:py-32 grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+        <div class="lg:col-span-7 space-y-8 text-right">
+            <span class="inline-block border-r-2 border-[#D9A05B] pr-4 text-xs font-black uppercase text-[#D9A05B] tracking-widest">THE EXQUISITE CLUB</span>
+            <h1 data-placeholder="hero_title">
+                صالون النخبة للعناية <span class="block text-transparent bg-clip-text bg-gradient-to-r from-[#E2B275] to-[#D9A05B] mt-2">والحلاقة الرجالية الخاصة.</span>
+            </h1>
+            <p class="text-sm md:text-base text-stone-300 font-light leading-relaxed max-w-xl">
+                أجواء هادئة منعزلة مصممة للراحة والاسترخاء المطلق فـ Casablanca، مع توفير أرقى أنواع الزيوت العضوية النادرة والمستحضرات الطبيعية لتغذية بشرتك وشعرك بعناية فائقة.
+            </p>
+            <div class="pt-4 flex flex-col sm:flex-row gap-4">
+                <a href="#reserve-station" class="emerald-gradient text-neutral-950 font-black text-center px-8 py-4 text-xs tracking-wider uppercase rounded-sm shadow-xl">
+                    طلب حجز مقعد VIP الآن
+                </a>
+                <a href="#services" class="border border-emerald-900 text-stone-300 font-bold text-center px-8 py-4 text-xs hover:bg-emerald-950/40 transition-all rounded-sm">
+                    قائمة العناية والأسعار
+                </a>
+            </div>
+        </div>
+        <div class="lg:col-span-5">
+            <div class="border border-emerald-900/60 p-3 bg-black/20 rounded-2xl">
+                <img data-editable="hero_image" src="assets/hero.jpg?v=1782116276047" class="w-full h-[460px] object-cover rounded-xl filter contrast-110 brightness-90 shadow-2xl">
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Value Badges -->
+    <section id="about" class="border-y border-emerald-950/60 bg-black/10 py-12 px-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div class="space-y-1">
+                <p class="text-2xl font-black text-[#D9A05B]">100%</p>
+                <p class="text-[10px] uppercase font-bold text-stone-400 tracking-wider">زيوت ومستخلصات طبيعية</p>
+            </div>
+            <div class="space-y-1">
+                <p class="text-2xl font-black text-white">4.9★</p>
+                <p class="text-[10px] uppercase font-bold text-stone-400 tracking-wider">تقييم النخبة خرائط جوجل</p>
+            </div>
+            <div class="space-y-1">
+                <p class="text-2xl font-black text-[#D9A05B]">01</p>
+                <p class="text-[10px] uppercase font-bold text-stone-400 tracking-wider">كرسي واحد لكل زبون بالموعد</p>
+            </div>
+            <div class="space-y-1">
+                <p class="text-2xl font-black text-white">2026</p>
+                <p class="text-[10px] uppercase font-bold text-stone-400 tracking-wider">أحدث بروتوكولات العناية</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clean Menu Column -->
+    <section id="services" class="max-w-5xl mx-auto px-6 py-24 space-y-16">
+        <div class="text-center space-y-2">
+            <h2 class="text-3xl font-black text-white">قائمة الباقات والخدمات الاستثنائية</h2>
+            <p class="text-xs text-stone-400 max-w-sm mx-auto">توليفة متكاملة تجمع بين دقة الأداء ورفاهية المواد المستعملة</p>
+        </div>
+
+        <div class="space-y-4">
+            <!-- Item 1 -->
+            <div class="p-6 bg-black/10 border border-emerald-950 rounded-xl flex flex-col md:flex-row justify-between items-start md:items-center gap-4 hover:border-[#D9A05B]/30 transition-all group">
+                <div class="space-y-1 text-right">
+                    <h4 class="font-black text-white text-base group-hover:text-[#D9A05B] transition-colors">باقة العناية الملكية بالبشرة والشعر</h4>
+                    <p class="text-xs text-stone-400 font-light">تشمل تنظيف عميق للمسامات، قصة ليزر متناسقة، وحلاقة بالموس الساخن المهدئ للبشرة.</p>
+                </div>
+                <div class="flex items-center gap-6 self-end md:self-auto">
+                    <span class="text-lg font-black font-mono text-[#D9A05B]">250 DH</span>
+                    <a href="#reserve-station" class="border border-emerald-900 text-[11px] font-bold px-4 py-2 hover:bg-[#D9A05B] hover:text-black transition-colors text-white">حجز هاد الباقة</a>
+                </div>
+            </div>
+            <!-- Item 2 -->
+            <div class="p-6 bg-black/10 border border-emerald-950 rounded-xl flex flex-col md:flex-row justify-between items-start md:items-center gap-4 hover:border-[#D9A05B]/30 transition-all group">
+                <div class="space-y-1 text-right">
+                    <h4 class="font-black text-white text-base group-hover:text-[#D9A05B] transition-colors">جلسة تشذيب وتحديد اللحية التنفيذية</h4>
+                    <p class="text-xs text-stone-400 font-light">تحديد دقيق متناسق مع ملامح الوجه باستعمال زيوت الأركان العضوية النادرة لترطيب عميق وحماية الجلد.</p>
+                </div>
+                <div class="flex items-center gap-6 self-end md:self-auto">
+                    <span class="text-lg font-black font-mono text-[#D9A05B]">130 DH</span>
+                    <a href="#reserve-station" class="border border-emerald-900 text-[11px] font-bold px-4 py-2 hover:bg-[#D9A05B] hover:text-black transition-colors text-white">حجز هاد الباقة</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Master Stylists Section -->
+    <section id="team" class="max-w-7xl mx-auto px-6 py-16 border-t border-emerald-950/60">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="space-y-2 text-right">
+                <span class="text-[10px] font-bold text-[#D9A05B] uppercase tracking-widest">THE EXPERTS</span>
+                <h3 class="text-2xl font-black text-white">خبراء الحلاقة المعتمدين</h3>
+                <p class="text-xs text-stone-400 font-light leading-relaxed">فريقنا الفني مهيأ ومدرب على أعلى مستويات إرضاء العميل والاهتمام بالتفاصيل الدقيقة للمظهر الشخصي.</p>
+            </div>
+            <div class="bg-black/20 border border-emerald-950 p-4 rounded-xl space-y-4"https://images.unsplash.com/photo-1503951914875-57316270389b?auto=format&fit=crop&w=1600&h=900&q=801202-1e0f0137899a?q=80&w=400" class="w-full h-56 object-cover rounded-lg filter grayscale contrast-110">
+                <div class="text-right">
+                    <h4 class="text-sm font-black text-white">أحمد التازي</h4>
+                    <p class="text-[10px] text-[#D9A05B] font-mono mt-0.5">Visagiste Expert</p>
+                </div>
+            </div>
+            <div class="bg-black/20 border border-emerald-9https://images.unsplash.com/photo-1622286342623-4fc325b37983?auto=format&fit=crop&w=1600&h=900&q=80unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=400" class="w-full h-56 object-cover rounded-lg filter grayscale contrast-110">
+                <div class="text-right">
+                    <h4 class="text-sm font-black text-white">سفيان المرابط</h4>
+                    <p class="text-[10px] text-[#D9A05B] font-mono mt-0.5">Grooming Master</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Auto-WhatsApp Instant Reservation Form Box -->
+    <section id="reserve-station" class="bg-black/20 py-24 px-6 border-t border-emerald-950/60">
+        <div 
+            class="max-w-xl mx-auto bg-[#051814] border border-emerald-900 p-8 md:p-12 rounded-2xl text-center space-y-6 shadow-2xl"
+            x-data="{
+                name: '',
+                service: '',
+                phone: '{PHONE_RAW}',
+                submitEmerald() {
+                    if(!this.name || !this.service) {
+                        alert('عافاك اكتب الاسم واختار الخدمة لتأكيد الحجز الفخم!');
+                        return;
+                    }
+                    let msg = `👑 طلب حجز موعد VIP من فئة النخبة:\n\n👤 الاسم الكريم: ${this.name}\n🔱 الخدمة المطلوبة: ${this.service}\n\nيرجى تأكيد الاستلام فوراً!`;
+                    window.open(`https://wa.me/${this.phone}?text=${encodeURIComponent(msg)}`, '_blank');
+                }
+            }"
+        >
+            <h4 class="text-xs font-black tracking-widest uppercase text-[#D9A05B]">طلب حجز مقعدك الخاص الفوري بالواتساب</h4>
+            <div class="space-y-4 pt-2 text-right">
+                <div class="space-y-1">
+                    <label class="text-[11px] font-bold text-stone-400">الاسم ديالك الكامل:</label>
+                    <input type="text" x-model="name" placeholder="مثال: المهدي بناني" class="w-full bg-black/40 border border-emerald-900 rounded-lg p-4 text-xs text-center text-white focus:outline-none focus:border-[#D9A05B]">
+                </div>
+                <div class="space-y-1">
+                    <label class="text-[11px] font-bold text-stone-400">اختار باقة العناية:</label>
+                    <select x-model="service" class="w-full bg-black/40 border border-emerald-900 rounded-lg p-4 text-xs text-center text-stone-300 focus:outline-none focus:border-[#D9A05B]">
+                        <option value="">-- اضغط للاختيار الفوري --</option>
+                        <option value="باقة العناية الملكية بالبشرة والشعر">باقة العناية الملكية بالبشرة والشعر (250 DH)</option>
+                        <option value="جلسة تشذيب وتحديد اللحية التنفيذية">جلسة تشذيب وتحديد اللحية التنفيذية (130 DH)</option>
+                    </select>
+                </div>
+            </div>
+            <button @click="submitEmerald()" class="w-full emerald-gradient text-neutral-950 font-black py-4 rounded-sm text-xs tracking-wider uppercase hover:opacity-90 transition-opacity pt-4 shadow-lg">
+                تأكيد الموعد الإستثنائي المباشر دابا 🔱
+            </button>
+        </div>
+    </section>
+
+    <!-- Interactive FAQ Section -->
+    <section id="faq" class="max-w-3xl mx-auto px-6 pb-24 space-y-8" x-data="{ openFaq: null }">
+        <h3 class="text-xl font-black text-center text-white">الأسئلة الشائعة</h3>
+        <div class="space-y-3">
+            <div class="border border-emerald-950 bg-black/10 rounded-lg overflow-hidden">
+                <button @click="openFaq = openFaq === 1 ? null : 1" class="w-full p-5 text-right flex justify-between items-center text-xs font-bold text-white hover:bg-black/20">
+                    <span>هل يتم تغيير الشفرات والمناشف بعد كل زبون؟</span>
+                    <span class="text-[#D9A05B]" x-text="openFaq === 1 ? '▲' : '▼'"></span>
+                </button>
+                <div x-show="openFaq === 1" x-collapse class="p-5 text-xs text-stone-400 font-light border-t border-emerald-950 leading-relaxed">
+                    بكل تأكيد. نحن نلتزم بأعلى معايير السلامة الصحية؛ حيث يتم استخدام شفرات أحادية الاستعمال لكل زبون وتغيير المناشف وغسلها تحت درجات حرارة عالية لضمان حماية بشرتك.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map & Embed Footer Location -->
+    <section class="w-full h-[350px] relative border-t border-emerald-950/60">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.84643034947!2d-7.6325514!3d33.5833215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDM1JzAwLjAiTiA3wrAzNzk1Ny4yIlc!5e0!3m2!1sfr!2sma!4v1710000000000!5m2!1sfr!2sma" 
+            class="w-full h-full border-0 grayscale invert opacity-10" 
+            allowfullscreen="" 
+            loading="lazy">
+        </iframe>
+        <div class="absolute bottom-6 right-6 bg-[#051814] border border-emerald-900 p-5 rounded-xl max-w-xs text-right">
+            <h4 class="text-xs font-black text-white mb-1">📍 موقع الصالون الحصري</h4>
+            <p class="text-[11px] text-stone-400 leading-relaxed font-light">{ADDRESS_FULL}</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-10 text-[10px] text-emerald-900/60 font-serif tracking-widest bg-black">
+        EMERALD & ROSE EXQUISITE SYSTEM — CASABLANCA | © 2026 ALL RIGHTS RESERVED
+    </footer>
+
+<script>(function(){
+  if (window.DRIPZONE_EDIT_MODE === true) return;
+  if (window.__dzProductionLockReady) return;
+  window.__dzProductionLockReady = true;
+
+  document.documentElement.classList.add('dz-production-mode');
+  document.body.classList.remove('dz-inline-edit-mode');
+
+  document.querySelectorAll('[contenteditable]').forEach(function(el){
+    el.removeAttribute('contenteditable');
+    el.removeAttribute('spellcheck');
+    el.classList.remove('dz-inline-editing');
+  });
+  document.querySelectorAll('[data-dz-inline-bound]').forEach(function(el){
+    el.removeAttribute('data-dz-inline-bound');
+  });
+
+  var css = document.createElement('style');
+  css.id = 'dz-production-lock';
+  css.textContent = [
+    'html.dz-production-mode,html.dz-production-mode body{overflow-x:hidden;scroll-behavior:smooth}',
+    'html.dz-production-mode [data-editable-token],html.dz-production-mode [data-placeholder]{',
+    '  outline:none!important;box-shadow:none!important;cursor:inherit;background:transparent!important}',
+    'html.dz-production-mode .dz-inline-editing{outline:none!important;background:transparent!important}',
+    'html.dz-production-mode [data-editable-token]:empty{display:none}',
+    'html.dz-production-mode a[href]{pointer-events:auto}'
+  ].join('');
+  if (!document.getElementById('dz-production-lock')) {
+    document.head.appendChild(css);
+  }
+})();</script></body>
+</html>
